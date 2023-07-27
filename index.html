@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form id="form">
+                <h4>Create Figure</h4>
+                <div>
+                    <div>
+                        <label for="width">Width: <span></span></label><br>
+                        <input type="number" name="width" id="width" min="0">
+                    </div>
+                    <div>
+                        <label for="height">Height: <span></span></label><br>
+                        <input type="number" name="height" id="height" min="0">
+                    </div>
+                    <div>
+                        <label for="type">Type</label>
+                        <select id="type">
+                            <option value="none" hidden>Figure</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="triangle">Triangle</option>
+                            <option value="circle">Circle</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color">BgColor</label>
+                        <select id="bg-color">
+                            <option value="none" hidden>Color</option>
+                            <option value="red">red</option>
+                            <option value="yellow">yellow</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="white">white</option>
+                            <option value="purple">purple</option>
+                            <option value="black">black</option>
+                            <option value="pink">pink</option>
+                        </select>
+                    </div>
+                </div>
+                <button name="button">Create figure</button>
+            </form>
+            <div class="figure_style">
+                <h4 class="type">Type: <span></span></h4>
+                <p class="width">Width: <span></span></p>
+                <p class="height">Height: <span></span></p>
+                <p class="bg-color">Bg-color: <span></span></p>
+            </div>
+            <div id="figure"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
